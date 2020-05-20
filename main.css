@@ -117,7 +117,7 @@ h2 {
   border-left: 7px solid #9cb4a4;
 }
 
-.clearfix:after {
+#wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -133,7 +133,7 @@ table {
 }
 
 #portfolio {
-  background-image: url(./bg-portfolio.jpg);
+  background-image: url(images/bg-portfolio.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
