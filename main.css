@@ -140,7 +140,7 @@ table {
   background-size: 100% auto;
 }
 
-.main {
+main {
   width: 700px;
   margin: 0 10px;
   float: left;
@@ -170,4 +170,12 @@ a img:hover {
   color: #333333;
 }
 
+
+
+
+.main {
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+}
 
