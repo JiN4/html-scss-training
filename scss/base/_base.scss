@@ -1,0 +1,38 @@
+.header {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+
+  .header-global-nav {
+    float: right;
+    margin-top: 60px;
+
+    &__item {
+      float: left;
+      margin: 0 20px;
+      font-size: 20px;
+      list-style: none;
+      font-family: 'Bitter', serif;
+    }
+    &__item-link {
+      color: #ffffff;
+
+      &:hover {
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 3px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+  background-color: #767671;
+
+  &__company {
+    font-size: 12px;
+  }
+}
