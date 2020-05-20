@@ -12,14 +12,14 @@
     <header class="header">
       <nav>
         <ul class="header-global-nav">
-          <li class="header-global-bav__item">
-            <a href="">menu1</a>
+          <li class="header-global-nav__item">
+            <a class="header-global-nav__item-link" href="">menu1</a>
           </li>
-          <li class="header-global-bav__item">
-            <a href="">menu2</a>
+          <li class="header-global-nav__item">
+            <a class="header-global-nav__item-link" href="">menu2</a>
           </li>
-          <li class="header-global-bav__item">
-            <a href="">menu3</a>
+          <li class="header-global-nav__item">
+            <a class="header-global-nav__item-link" href="">menu3</a>
           </li>
         </ul>
       </nav>
@@ -27,8 +27,8 @@
     <!-- header終わり -->
     <!-- wrap始まり -->
     <div id="wrap">
-      <div class="wrap-content">
-        <main>
+      <div class="content">
+        <main class="content-main">
           <h1>Section1</h1>
           <p>ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</p>
           <section>
@@ -48,13 +48,19 @@
             </p>
           </section>
         </main>
-        <aside class="sidebar">
+        <aside class="content-sidebar">
           <nav>
-            <h2>Sidebar</h2>
+            <h2 class="content-sidebar__header">Sidebar</h2>
             <ul>
-              <li><a href="">リスト1</a></li>
-              <li><a href="">リスト2</a></li>
-              <li><a href="">りスト3</a></li>
+              <li class="content-sidebar__item">
+                <a class="content-sidebar__item-link" href="">リスト1</a>
+              </li>
+              <li class="content-sidebar__item">
+                <a class="content-sidebar__item-link" href="">リスト2</a>
+              </li>
+              <li class="content-sidebar__item">
+                <a class="content-sidebar__item-link" href="">りスト3</a>
+              </li>
             </ul>
           </nav>
         </aside>
@@ -63,8 +69,8 @@
     <!-- wrap終わり -->
   
     <!-- footer始まり -->
-    <footer>
-      <small>(C)2020 Nextbeat</small>
+    <footer class="footer">
+      <small class="footer__company">(C)2020 Nextbeat</small>
     </footer>
     <!-- footer終わり -->   
   </body>

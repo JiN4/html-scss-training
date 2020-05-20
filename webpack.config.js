@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, './'),
   // ここがどのscssをみるか
-  entry: "./main.scss",
+  entry: "./scss/index.scss",
   output: {
     // どのディレクトリにどんな名前でbuild後のcssを吐くか
     path: path.join(__dirname, ''),
