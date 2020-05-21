@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, './'),
   // ここがどのscssをみるか
-  entry: "./scss/index.scss",
+  entry: "./index.scss",
   output: {
     // どのディレクトリにどんな名前でbuild後のcssを吐くか
     path: path.join(__dirname, ''),
@@ -25,7 +25,14 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-          },
+            options: {
+              name: '[name].[ext]',
+              outputPath : 'images/',
+              publicPath : function(path){
+                return './' + path;
+              }
+            }
+          }
         ]
       }
     ]

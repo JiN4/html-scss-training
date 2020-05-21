@@ -25,12 +25,13 @@ a {
 }
 
 #portfolio {
-  background-image:      url(images/bg-portfolio.jpg);
+  background-image:      url(./images/bg-portfolio.jpg);
   background-repeat:     no-repeat;
   background-position:   center top;
   background-attachment: fixed;
   background-size:       100% auto;
 }
 
-@import "base/_base.scss";
-@import "page/_content.scss";
+@import "scss/index/_wrap.scss";
+@import "scss/index/_header.scss";
+@import "scss/index/_footer.scss";
