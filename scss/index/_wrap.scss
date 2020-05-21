@@ -1,13 +1,13 @@
 #wrap {
   clear: both;
-  background-color: #ffffff;
+  background-color: $palette-White;
   margin-top:       500px;
   padding:          35px 0;
 
   &:after {
-    content: "";
     display: block;
     clear:   both;
+    content: "";
   }
 
   .content {
@@ -15,14 +15,14 @@
     margin: 0 auto;
 
     .content-main {
+      float:  left;
       width:  700px;
       margin: 0 10px;
-      float:  left;
 
       &__title {
+        border-bottom: 1px solid $palette-Light-Gray;
         font-family:   'Bitter', serif;
         font-size:     36px;
-        border-bottom: 1px solid #cccccc;
       }
 
       .content-main-section {
@@ -39,9 +39,9 @@
     }
 
     .content-sidebar {
+      float:       right;
       width:       200px;
       margin:      0 10px 0 30px;
-      float:       right;
       font-family: 'Bitter', serif;
 
       &__title {
@@ -49,11 +49,11 @@
       }
 
       .content-sidebar-nav {
-        font-size:   16px;
         margin-left: 20px;
+        font-size:   16px;
 
         &__item-link {
-          color: #333333;
+          color: $palette-Dark-Gray;
         }
       }
     }

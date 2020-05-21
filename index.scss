@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 body {
+  position:         relative;
+  line-height:      2;
   margin:           0;
   padding:          0;
-  background-color: #cccccc;
-  color:            #333333;
+  background-color: $palette-Light-Gray;
+  color:            $palette-Dark-Gray;
   font-size:        15px;
-  line-height:      2;
-  position:         relative;
 }
 
 ul {
@@ -15,8 +15,8 @@ ul {
   padding: 0;
 }
 
-a { 
-  color:           #3583aa;
+a {
+  color:           $palette-Blue;
   text-decoration: none;
 
   &:hover {
@@ -35,3 +35,5 @@ a {
 @import "scss/index/_wrap.scss";
 @import "scss/index/_header.scss";
 @import "scss/index/_footer.scss";
+@import "scss/setting/variables.scss";
+

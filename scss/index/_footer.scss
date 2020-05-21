@@ -1,8 +1,8 @@
 .footer {
-  text-align: center;
-  color: #ffffff;
-  padding: 20px 0;
-  background-color: #767671;
+  padding:          20px 0;
+  background-color: $palette-Gray;
+  color:            $palette-White;
+  text-align:       center;
 
   &__company {
     font-size: 12px;
