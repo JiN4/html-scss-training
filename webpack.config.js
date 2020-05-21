@@ -1,5 +1,6 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
+const outputFilePath = "/images/"
 
 module.exports = {
   context: path.join(__dirname, './'),
@@ -27,9 +28,10 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath : 'images/',
+              outputPath : outputFilePath,
               publicPath : function(path){
-                return './' + path;
+                console.log("pathは" + path);
+                return './' + outputFilePath + path;
               }
             }
           }

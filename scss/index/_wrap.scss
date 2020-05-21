@@ -9,35 +9,59 @@
     display: block;
     clear:   both;
   }
-}
 
-.content {
-  width:  960px;
-  margin: 0 auto;
-}
+  .content {
+    width:  960px;
+    margin: 0 auto;
 
-.content-main {
-  width:  700px;
-  margin: 0 10px;
-  float:  left;
-}
+    .content-main {
+      width:  700px;
+      margin: 0 10px;
+      float:  left;
 
-.content-sidebar {
-  width:       200px;
-  margin:      0 10px 0 30px;
-  float:       right;
-  font-family: 'Bitter', serif;
+      &__title {
+        font-family:   'Bitter', serif;
+        font-size:     36px;
+        border-bottom: 1px solid #cccccc;
+      }
 
-  &__header {
-    margin-bottom: 10px;
+      .content-main-section {
+        margin-bottom: 35px;
+
+        &__title {
+          font-family: 'Bitter', serif;
+          font-size:   24px;
+        }
+        &__title-link-image:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .content-sidebar {
+      width:       200px;
+      margin:      0 10px 0 30px;
+      float:       right;
+      font-family: 'Bitter', serif;
+
+      &__title {
+        margin-bottom: 10px;
+      }
+
+      .content-sidebar-nav {
+        font-size:   16px;
+        margin-left: 20px;
+
+        &__item-link {
+          color: #333333;
+        }
+      }
+    }
+
+    .content-main-section__title, .content-sidebar__title {
+      font-family: 'Bitter', serif;
+      font-size:   24px;
+    }
   }
-
-  &__item {
-    font-size:   16px;
-    margin-left: 20px;
-  }
-
-  &__item-link {
-    color: #333333;
-  }
 }
+
