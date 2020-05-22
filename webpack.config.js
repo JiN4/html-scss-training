@@ -30,7 +30,6 @@ module.exports = {
               name: '[name].[ext]',
               outputPath : outputFilePath,
               publicPath : function(path){
-                console.log("pathは" + path);
                 return './' + outputFilePath + path;
               }
             }

@@ -13,21 +13,23 @@
       width:  700px;
       margin: 0 10px;
 
-      &__title {
+      .main__title {
         border-bottom: 1px solid $palette-Light-Gray;
         font-family:   'Bitter', serif;
-        font-size:     36px;
+        font-size:     $font-size-large;
       }
-
-      .content-main-section {
+      .main-section {
         margin-bottom: 35px;
 
-        &__title {
+        .main-section-title {
           font-family: 'Bitter', serif;
-          font-size:   24px;
-        }
-        &__title-link-image:hover {
-          opacity: 0.8;
+          font-size:   $font-size-medium;
+
+          .main-section-title-link {
+            .title-link__image:hover {
+              opacity: 0.8;
+            }
+          }
         }
       }
     }
@@ -39,23 +41,23 @@
       font-family:    'Bitter', serif;
       vertical-align: top;
 
-      &__title {
+      .sidebar__title {
         margin-bottom: 10px;
       }
 
-      .content-sidebar-nav {
+      .sidebar-nav {
         margin-left: 20px;
-        font-size:   16px;
+        font-size:   $font-size-micro;
 
-        &__item-link {
+        .sidebar-nav-item__link {
           color: $palette-Dark-Gray;
         }
       }
     }
 
-    .content-main-section__title, .content-sidebar__title {
+    .main-section-title, .sidebar__title {
       font-family: 'Bitter', serif;
-      font-size:   24px;
+      font-size:   $font-size-medium;
     }
   }
 }
