@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@import "scss/setting/_variables.scss";
+@import "scss/index/_wrap.scss";
+@import "scss/index/_header.scss";
+@import "scss/index/_footer.scss";
+
+
+
 body {
   position:         relative;
   line-height:      2;
@@ -32,8 +39,4 @@ a {
   background-size:       100% auto;
 }
 
-@import "scss/index/_wrap.scss";
-@import "scss/index/_header.scss";
-@import "scss/index/_footer.scss";
-@import "scss/setting/variables.scss";
 

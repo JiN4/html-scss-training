@@ -4,18 +4,12 @@
   margin-top:       500px;
   padding:          35px 0;
 
-  &:after {
-    display: block;
-    clear:   both;
-    content: "";
-  }
-
   .content {
     width:  960px;
     margin: 0 auto;
 
     .content-main {
-      float:  left;
+      display: inline-block;
       width:  700px;
       margin: 0 10px;
 
@@ -39,10 +33,11 @@
     }
 
     .content-sidebar {
-      float:       right;
-      width:       200px;
-      margin:      0 10px 0 30px;
-      font-family: 'Bitter', serif;
+      display: inline-block;
+      width:          200px;
+      margin:         0 10px 0 25px;
+      font-family:    'Bitter', serif;
+      vertical-align: top;
 
       &__title {
         margin-bottom: 10px;

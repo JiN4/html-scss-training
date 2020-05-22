@@ -1,15 +1,13 @@
 .header {
   width:  960px;
-  height: 100px;
+  height: 40px;
   margin: 0 auto;
-
   .header-global-nav {
-    float:      right;
     margin-top: 60px;
-
+    text-align: right;
     &__item {
       list-style:  none;
-      float:       left;
+      display: inline-block;
       margin:      0 20px;
       font-size:   20px;
       font-family: 'Bitter', serif;
@@ -25,3 +23,34 @@
     }
   }
 }
+
+/*
+.header {
+  width:    960px;
+  height:   100px;
+  margin:   0 auto;
+  position: relative;
+  .header-global-nav {
+    text-align: right;
+    position:   absolute;
+    right:      0;
+    bottom:     0;
+    &__item {
+      list-style:  none;
+      display: inline-block;
+      margin:      0 20px;
+      font-size:   20px;
+      font-family: 'Bitter', serif;
+    }
+    &__item-link {
+      color: $palette-White;
+
+      &:hover {
+        padding-bottom:  3px;
+        border-bottom:   2px solid $palette-White;
+        text-decoration: none;
+      }
+    }
+  }
+}
+*/

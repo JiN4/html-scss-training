@@ -90,3 +90,54 @@ https://creive.me/archives/8814/#HTML5
 
 ### SCSSのファイル設計について
 https://tsudoi.org/guide/detail/8.html
+
+# CSS
+
+## プロパティ
+### display
+#### 詳細
+要素の表示形式を決めるもの。
+#### 値
+##### block
+1. 要素が横までいっぱいに広がり、縦に並んでいく
+2. heightとwidthが指定できる
+3. margin,paddingが指定できる
+4. text-alignは指定できない
+5. vertical-alignは指定できない
+
+##### inline
+1. 主に文章の一部として用いられる
+2. 要素が平ぺったく横に並んでいく
+3. heightとwidthは指定できない（文字の長さや大きさで決まる）
+4. 左右のpaddingとmarginは指定できる
+5. 上下はpaddingの指定はできるが、前後の行と被る
+6. text-alignは親要素に対して指定できる
+7. vertical-alignは指定できる
+
+##### inline-block
+1. blockとinlineの中間
+2. height,width,margin,paddingが指定できるinline
+3. floutの代わりとして使える場合がある
+
+#### block同士の隙間の解決
+block,inline,inline-block、それぞれを並べた時に少し隙間が生じてしまう。  
+それらを解決するためにはいくつかの方法がある。
+1. marginにマイナスを当てる
+2. 隙間が出ている要素間にコメントアウトをつける
+3. 隙間が出ている要素間を改行せずに詰める。
+
+
+### text-align
+#### 詳細
+行のなかでのテキストや画像などの横方向の揃え位置を指定する。
+
+### vertical-align
+#### 詳細
+行のなかでのテキストや画像などの縦方向の揃え位置を指定する。
+
+### opacity
+#### 詳細
+要素の透明度を指定する。
+
+#### 値
+0.0（完全に透明）～1.0（完全に不透明）の範囲
