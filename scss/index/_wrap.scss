@@ -1,5 +1,4 @@
 #wrap {
-  clear: both;
   background-color: $palette-White;
   margin-top:       500px;
   padding:          35px 0;
@@ -25,10 +24,8 @@
           font-family: 'Bitter', serif;
           font-size:   $font-size-medium;
 
-          .main-section-title-link {
-            .title-link__image:hover {
-              opacity: 0.8;
-            }
+          .title-link__image:hover {
+            opacity: 0.8;
           }
         }
       }
