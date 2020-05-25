@@ -7,9 +7,9 @@
     text-align: right;
     &__item {
       list-style:  none;
-      display: inline-block;
+      display:     inline-block;
       margin:      0 20px;
-      font-size:   $font-size-small;
+      font-size:   $font-size-larges;
       font-family: 'Bitter', serif;
     }
     &__item-link {

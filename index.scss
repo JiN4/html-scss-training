@@ -14,7 +14,7 @@ body {
   padding:          0;
   background-color: $palette-Light-Gray;
   color:            $palette-Dark-Gray;
-  font-size:        15px;
+  font-size:        $font-size-base;
 }
 
 ul {
