@@ -12,7 +12,7 @@
       width:  700px;
       margin: 0 10px;
 
-      .main__title {
+      &__title {
         border-bottom: 1px solid $palette-Light-Gray;
         font-family:   'Bitter', serif;
         font-size:     $font-size-2xlarge;
@@ -38,7 +38,7 @@
       font-family:    'Bitter', serif;
       vertical-align: top;
 
-      .sidebar__title {
+      &__title {
         margin-bottom: 10px;
       }
 
