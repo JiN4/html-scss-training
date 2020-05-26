@@ -1,0 +1,10 @@
+.footer {
+  line-height:      50px;
+  background-color: $palette-Gray;
+  color:            $palette-White;
+  text-align:       center;
+
+  &__company {
+    font-size: $font-size-small;
+  }
+}
