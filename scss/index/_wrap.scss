@@ -1,66 +1,60 @@
 #wrap {
-  clear: both;
   background-color: $palette-White;
   margin-top:       500px;
   padding:          35px 0;
-
-  &:after {
-    display: block;
-    clear:   both;
-    content: "";
-  }
 
   .content {
     width:  960px;
     margin: 0 auto;
 
     .content-main {
-      float:  left;
+      display: inline-block;
       width:  700px;
       margin: 0 10px;
 
       &__title {
         border-bottom: 1px solid $palette-Light-Gray;
         font-family:   'Bitter', serif;
-        font-size:     36px;
+        font-size:     $font-size-2xlarge;
       }
-
-      .content-main-section {
+      .main-section {
         margin-bottom: 35px;
 
-        &__title {
+        .main-section-title {
           font-family: 'Bitter', serif;
-          font-size:   24px;
-        }
-        &__title-link-image:hover {
-          opacity: 0.8;
+          font-size:   $font-size-xlarge;
+
+          .title-link__image:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
 
     .content-sidebar {
-      float:       right;
-      width:       200px;
-      margin:      0 10px 0 30px;
-      font-family: 'Bitter', serif;
+      display: inline-block;
+      width:          200px;
+      margin:         0 10px 0 25px;
+      font-family:    'Bitter', serif;
+      vertical-align: top;
 
       &__title {
         margin-bottom: 10px;
       }
 
-      .content-sidebar-nav {
+      .sidebar-nav {
         margin-left: 20px;
-        font-size:   16px;
+        font-size:   $font-size-medium;
 
-        &__item-link {
+        .sidebar-nav-item__link {
           color: $palette-Dark-Gray;
         }
       }
     }
 
-    .content-main-section__title, .content-sidebar__title {
+    .main-section-title, .sidebar__title {
       font-family: 'Bitter', serif;
-      font-size:   24px;
+      font-size:   $font-size-xlarge;
     }
   }
 }
